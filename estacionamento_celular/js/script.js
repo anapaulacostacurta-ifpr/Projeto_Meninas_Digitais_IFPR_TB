@@ -80,6 +80,7 @@ function checkin() {
             if (aluno.checkin) {
                 // Celular estacionado E formulário preenchido corretamente
                 vagaElemento.classList.add('ocupada-ok');
+                vagaElemento.getElementsByClassName(vaga-nome) = 'USADO'
             } else {
                 // Celular estacionado MAS formulário não preenchido/inválido (ALERTA!)
                 vagaElemento.classList.add('ocupada-alerta');
