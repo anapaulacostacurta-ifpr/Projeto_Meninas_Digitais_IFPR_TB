@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+#estacionamento-digital {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as vagas quebrem a linha */
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre as vagas */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.vaga {
+    width: 150px;
+    height: 100px;
+    border: 3px solid #333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #e0e0e0; /* Livre */
+    cursor: default;
+}
+
+.vaga-numero {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.vaga-nome {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+    padding: 0 5px;
+}
+
+/* Status: VAGA OCUPADA COM CHECK-IN (Verde) */
+.ocupada-ok {
+    background-color: #a5d6a7; /* Verde Claro */
+    border-color: #388e3c; /* Borda Verde Escura */
+}
+
+/* Status: VAGA OCUPADA SEM CHECK-IN (Amarelo/Alerta) - Para simulação de erro no F-01 */
+.ocupada-alerta {
+    background-color: #ffcc80; /* Laranja Claro */
+    border-color: #ff9800; /* Borda Laranja Escura */
+}
+
+/* Estilo para o botão de simulação */
+button {
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #039be5;
+}
