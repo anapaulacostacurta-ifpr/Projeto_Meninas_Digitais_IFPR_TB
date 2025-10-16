@@ -6,7 +6,7 @@ const vagasDaTurma = 40;
 const dadosForms = [
     { vaga: 1, checkin: true },
     { vaga: 2, checkin: false },
-    { vaga: 3, checkin: false }, // Simulação: Aluno não marcou o 'Confirmo' no Forms
+    { vaga: 3, checkin: false }, 
     { vaga: 5, checkin: false },
     { vaga: 6, checkin: false },
     { vaga: 7, checkin: false },
