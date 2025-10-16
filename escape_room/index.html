@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevTools Escape Room</title>
+  <style>
+    #password-container { display: none; }
+    .clue-one { color: transparent; }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo ao DevTools Escape Room</h1>
+  <p>Encontre as 3 senhas para obter o Código Mestre!</p>
+
+  <div id="password-container">
+    <p class="clue-one">Senha 1: OEscopoDeBloco</p>
+  </div>
+  
+  <button id="start-mission">Iniciar Missão</button>
+  
+  <script>
+    const CLUE_TWO = 'AConstanteNaoMuda';
+    
+    document.getElementById('start-mission').addEventListener('click', () => {
+      let counter = 0;
+      for (let i = 0; i < 3; i++) {
+        counter += 10;
+      }
+      // Pista 3 está em uma função que só é executada ao clicar no botão
+      const getClueThree = (val) => {
+          let secret = 'Hoisting'+val;
+          console.log(secret); // Log da pista 3 no console
+          return secret;
+      };
+      getClueThree(counter);
+
+      // Simula uma requisição de rede para a Pista 4 (Não será usada neste exercício, mas serve como base para a aba Network)
+      fetch('https://jsonplaceholder.typicode.com/posts/1')
+        .then(response => response.json())
+        .then(data => {
+            // console.log("Resposta de Rede:", data);
+        });
+    });
+
+    console.log("Pista do Console: DevTools_Eh_Essencial");
+  </script>
+
+</body>
+</html>
