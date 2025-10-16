@@ -70,7 +70,7 @@ function checkin() {
     criarEstacionamentoDigital();
     
     // 2. Processar os dados do formulário
-    dadosFormsSimulados.forEach(aluno => {
+    dadosForms.forEach(aluno => {
         const vagaId = `vaga-${aluno.vaga}`;
         const vagaElemento = document.getElementById(vagaId);
 
