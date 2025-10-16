@@ -5,7 +5,7 @@ const vagasDaTurma = 40;
 // Array de objetos simulando as respostas do Google Forms
 const dadosForms = [
     { vaga: 1, checkin: true },
-    { vaga: 2, checkin: true },
+    { vaga: 2, checkin: false },
     { vaga: 3, checkin: false }, // Simulação: Aluno não marcou o 'Confirmo' no Forms
     { vaga: 5, checkin: false },
     { vaga: 6, checkin: false },
@@ -14,7 +14,7 @@ const dadosForms = [
     { vaga: 9, checkin: false },
     { vaga: 10, checkin: false },
     { vaga: 11, checkin: false },
-    { vaga: 12, checkin: false },
+    { vaga: 12, checkin: true },
     { vaga: 13, checkin: false },
     { vaga: 14, checkin: false },
     { vaga: 15, checkin: false },
